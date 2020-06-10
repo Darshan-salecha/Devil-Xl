@@ -86,11 +86,15 @@ h2 + p{
 footer{
 	background: #222;
 	color:beige;
-	text-align: center;
 	padding: 20px;
 	font-family: Times, sans-serif, serif;
 }
+footer iframe{
+		text-align: left;
+
+}
 footer p {
+		text-align: center;
 	padding: 20px;
 }
 
