@@ -5,7 +5,7 @@ html, body, .cover {
 }
 
 .cover {
-	background: url('img/couchfriends.jpg') top left no-repeat;
+	background: url('img/imgg.jpg') top left no-repeat;
 	background-size: cover;
 	display: table;
 	width: 100%;
@@ -13,7 +13,6 @@ html, body, .cover {
 	box-shadow: inset 0 0 100px #100;
 	
 }
-
 .cover-text {
 	text-align: center;
 	color:white;
@@ -23,9 +22,10 @@ html, body, .cover {
 
 .cover-text h1 {
 	font-size: 60px;
-	color:burlywood;
-	margin: 0;
+	color:lightgreen;
+	margin: 100px 0 0;
 	letter-spacing: -4px;
+         text-shadow: 3px 2px #000000;
 }
 
 .nav navbar {
