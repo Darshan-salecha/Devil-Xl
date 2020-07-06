@@ -1,0 +1,23 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/flask_website",
+    "prod_uri": "mysql://root:@localhost/flask_website",
+    "fb_url": "https://facebook.com/devil",
+    "tw_url": "https://twitter.com/devil",
+    "gh_url": "https://github.com/devil",
+    "blog_name": "Jasdeep Designer",
+    "cmp_name": "DEVIL'Xl",
+    "gmail-user": "darshanjain2777@gmail.com",
+    "gmail-password": "DArs74..",
+    "about_text": "Devil'Xl is company created by Jasdeep designer",
+    "no_of_posts": "4",
+    "login_img": "devil.png",
+    "admin_user": "darshan",
+    "admin_password": "darshanprd",
+    "upload_location": "C:\\Users\\DELL\\PycharmProject\\Website using flask\\static\\img",
+    "my_folder": "C:\\Users\\DELL\\PycharmProject\\Website using flask\\static\\my_uploades"
+  }
+
+}

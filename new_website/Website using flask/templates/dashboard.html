@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{url_for('static',filename='img/home-bg.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>{{params['blog_name']}}</h1>
+            <span class="subheading">Admin Panel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <center>
+        <h1>Basic Action</h1><br>
+        <a href="/add/0"><button class="btn btn-primary">Add New Post</button></a> &nbsp &nbsp &nbsp
+        <a href="/logout"><button class="btn btn-primary" onclick="return check()">Logout</button></a>
+        <hr>
+           </center>
+       <center> <h1>
+          Upload A File
+        </h1>
+        <br>
+        <form action="/uploader" method="post" enctype="multipart/form-data">
+          <input class="btn btn-primary" type="file" name="file"> &nbsp &nbsp
+          <button class="btn btn-primary" type="submit" onclick="fileuploaded()">Upload</button>
+
+        </form></center>
+        <hr>
+        <center><h2>Edit Posts</h2></center>
+          <table class="table">
+    <thead>
+      <tr>
+        <th>Sno</th>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for pos in post %}
+      <tr>
+        <td>{{pos.sno}}</td>
+        <td>{{pos.title}}</td>
+        <td>{{pos.date}}</td>
+        <td><a href="/edit/{{pos.sno}}"> <button class="btn btn-primary">Edit</button></a></td>
+        <td><a href="/delete/{{pos.sno}}"> <button class="btn btn-primary " onclick="return check_delete() ">Delete</button></a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+      </div>
+    </div>
+  </div>
+<script>
+  function check()
+  {
+  if(confirm("you want to logout" )==true)
+  return true;
+  else
+  return false;
+  }
+
+  function check_delete()
+  {
+  if(confirm("Are you sure you want to delete the post" )==true)
+  return true;
+  else
+  return false;
+  }
+
+  function fileuploaded()
+  {
+  alert("File Uploaded")
+  }
+</script>
+{% endblock %}

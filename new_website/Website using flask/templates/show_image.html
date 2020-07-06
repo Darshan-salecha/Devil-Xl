@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block body %}
+{% set fname='img/'+post.img_name %}
+<img src="{{url_for('static',filename=fname)}}" height="100%" width="100%">
+
+{% endblock %}

@@ -1,0 +1,81 @@
+
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->    <link href="startup.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <header class="masthead" style="background-image: url('{{url_for('static',filename='img/about-bg.jpg')}}')">
+
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Us</h1>
+            <span class="subheading">This is what We do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <center><div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>{{params['about_text']}}</p>
+      </div>
+    </div>
+  </div>
+      </center>
+<center>
+ <section id="team">
+		<h2>!....OWNERS....!</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+					<img src="{{url_for('static',filename='img/tarun.jpeg')}}" alt="Man's face" class="img-circle"style="width:160px;border-radius: 50%;"/>
+					<h4>Tarun Salecha</h4>
+					<p></p>
+				</div>
+
+				<div class="col-sm-6">
+					<img src="{{url_for('static',filename='img/prince1.jpg')}}" alt="Man's face" class="img-circle"style="width:180px;border-radius: 50%;"/>
+					<h4>Prince Salecha</h4>
+					<p></p>
+				</div>
+			</div>
+		 </div>
+	  </section>
+
+    <section id="signup">
+	  	<div class="container">
+                       <center> <p class="lead">We'll send you about our latest updates, sizzling sales and upcoming trends!</p> <hr>
+		 	<h3>For Further Details Contact us</h3>
+<hr>
+
+					<h4>
+                                          <i class="material-icons">phone</i>
+                                          Phone:+91 8209700386 .....+918905476960
+                        <br><br>
+                                          <i class="material-icons">mail</i>
+                                          Mail ID:darshanjain2777@gmail.com
+                                        </h4>
+			</center>
+		</div>
+	  </section>
+    </center>
+<br>
+<center>
+<div class="container">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5907798677863!2d72.5952848142827!3d23.03879292150452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e843e9cf9123d%3A0x929a3f7c8e75b55c!2sCity%20center!5e0!3m2!1sen!2sin!4v1591806762311!5m2!1sen!2sin"
+			 width="800" height="300" frameborder="0" style="border:0;"  aria-hidden="false" tabindex="0"></iframe>
+		  <p>© 2018 Jasdeep-Designer All rights reserved.<br>
+Crafted with &hearts; by <a href="darshanjain2777@gmail.com" style="color:red;">darshan</a></p>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</div>
+</center>
+ {% endblock %}
